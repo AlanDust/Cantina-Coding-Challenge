@@ -4,7 +4,8 @@ To run:
 
 1) Open the terminal
 2) cd into the correct file for this exercise (cantina-coding-challenge-v1)
-3) in the terminal, run the command: $ ruby data.rb
+3) in the terminal, run the command: $ bundle install 
+4) in the terminal, run the command: $ ruby data.rb
 4) The user will be prompted with a question and will have 3 possible correct answers
 5) There is an edge case, incase the user does not correctly execute the prompt, that allows the user to have multiple attempts at correctly filling out the prompt.
 6) The output will be a list of terms that came from key-value pairs based on the user input
@@ -26,9 +27,10 @@ UPDATED:
 To run:
 1) Open the terminal
 2) cd into the correct folder for this exercise (cantina-coding-challenge-v1).
-3) in the terminal, run the command: $ ruby second_option.rb **** this file is different from before!
-4) The user will be prompted with "Please input a selector for class, classnames, or identifiers to receive a JSON object associated with that selector", to which there are a finite number of selectors.
+3) in the terminal, run the command: $ bundle install
+4) in the terminal, run the command: $ ruby second_option.rb **** this file is different from before!
+5) The user will be prompted with "Please input a selector for class, classnames, or identifiers to receive a JSON object associated with that selector", to which there are a finite number of selectors.
   (selectors include: "StackView", "Box", "Input", "VideoModeSelect", "CvarCheckbox", "CvarSelect", "CvarSlider", "Container", "Columns", "Column" (which does not return values for "columns" as well),
   "accessoryView", "System", "videoMode", "windowMode", "verticalSync", "textureMode", "anisotrophy", "multiSample", "rate", and "apply", along with various capitalization edge cases.)
-5) If the user does not fill in a correct response (some capitalization and common symbol edge cases have been accounted for), they will be prompted to fill in a value again.
-6) The output will be a JSON object associated with the selector that the user had input.
+6) If the user does not fill in a correct response (some capitalization and common symbol edge cases have been accounted for), they will be prompted to fill in a value again.
+7) The output will be a JSON object associated with the selector that the user had input.
