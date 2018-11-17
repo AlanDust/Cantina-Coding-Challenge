@@ -1,0 +1,19 @@
+Ruby version: 2.3.3
+
+To run:
+
+1) Open the terminal
+2) cd into the correct file for this exercise
+3) in the terminal, run the command: $ ruby data.rb
+4) The user will be prompted with a question and will have 3 possible correct answers
+5) There is an edge case, incase the user does not correctly execute the prompt, that allows the user to have multiple attempts at correctly filling out the prompt.
+6) The output will be a list of terms that came from key-value pairs based on the user input
+
+
+For this exercise, the following Ruby gems were utilized:
+  -HTTParty
+    -a library that allows a developer to get information from another source, in this case a website, return the information as JSON, and parse the data.
+  -byebug
+    -a gem that works similar to a binding.pry or debugger, that allows the developer to parse through data in the console
+  -Hashie
+    -a gem that allows the developer to search through parsed data (along with many other features)
