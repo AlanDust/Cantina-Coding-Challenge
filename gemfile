@@ -6,3 +6,8 @@ ruby '2.3.3'
 gem 'httparty'
 gem 'byebug'
 gem 'hashie'
+
+group :development, :test do
+  gem "pry"
+  gem "rspec", "~> 3.7"
+end
