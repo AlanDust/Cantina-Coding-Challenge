@@ -1,15 +1,8 @@
 Ruby version: 2.3.3
 
-To run (outdated - please see UPDATED below!):
-
-1) Open the terminal
-2) cd into the correct file for this exercise (cantina-coding-challenge-v1)
-3) in the terminal, run the command: $ bundle install
-4) in the terminal, run the command: $ ruby data.rb
-4) The user will be prompted with a question and will have 3 possible correct answers
-5) There is an edge case, incase the user does not correctly execute the prompt, that allows the user to have multiple attempts at correctly filling out the prompt.
-6) The output will be a list of terms that came from key-value pairs based on the user input
-
+*****
+UPDATED: There are multiple answers to this exercise.  Instructions are below that explain each answer.
+*****
 
 For this exercise, the following Ruby gems were utilized:
   -HTTParty
@@ -19,17 +12,14 @@ For this exercise, the following Ruby gems were utilized:
   -Hashie
     -a gem that allows the developer to search through parsed data (along with many other features).
 
+OPTION 1:
+To run the "program" (utilized the Hashie gem):
 
-*****
-UPDATED:
-*****
-
-To run:
 1) Open the terminal
 2) cd into the correct folder for this exercise (cantina-coding-challenge-v1).
 3) in the terminal, run the command: $ bundle install
-4) in the terminal, run the command: $ ruby run_program.rb **** this file is different from before! **** (this will create a new Second_option class and run the find_data method)
-5) The user will be prompted with "Please input a selector for class, classnames, or identifiers to receive a JSON object associated with that selector", to which there are a finite number of selectors.
+4) in the terminal, run the command: $ ruby run_program.rb (this will create a new Program class and run the find_data method)
+5) The user will be prompted with "Please input a selector for class, classnames (include .), or identifiers (include #) to receive a JSON object associated with that selector", to which there are a finite number of selectors.
   (selectors include: "StackView", "Box", "Input", "VideoModeSelect", "CvarCheckbox", "CvarSelect", "CvarSlider", "Container", "Columns", "Column" (which does not return values for "columns" as well),
   "accessoryView", "System", "videoMode", "windowMode", "verticalSync", "textureMode", "anisotrophy", "multiSample", "rate", and "apply", along with various capitalization edge cases.)
 6) If the user does not fill in a correct response (some capitalization and common symbol edge cases have been accounted for - the input is not case sensitive), they will be prompted to fill in a value again.
@@ -41,3 +31,16 @@ To test:
 2) in the terminal, run the command: $ rspec
 3) complete steps 5-8 above in "to run"
 4) The test, which tests for the 26 views in the given JSON file with the class of "Input", should pass
+
+OPTION 2:
+To run the "recursion" (utilized recursion functions):
+
+1) Open the terminal
+2) cd into the correct folder for this exercise (cantina-coding-challenge-v1).
+3) in the terminal, run the command: $ bundle install
+4) in the terminal, run the command: $ ruby run_recursion.rb (this will create a new Recursion class and run the run method, which also runs the find_data method)
+5) The user will be prompted with "Please input a selector for class, classnames, or identifiers to receive a JSON object associated with that selector", to which there are a finite number of selectors.
+  (selectors include: "StackView", "Box", "Input", "VideoModeSelect", "CvarCheckbox", "CvarSelect", "CvarSlider", "Container", "Columns", "Column" (which does not return values for "columns" as well),
+  "accessoryView", "System", "videoMode", "windowMode", "verticalSync", "textureMode", "anisotrophy", "multiSample", "rate", and "apply".)
+6) If the user does not fill in a correct response (including capitalization and symbol), the program will terminate.
+7) The output will be a JSON object associated with the selector that the user had input.

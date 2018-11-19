@@ -2,10 +2,10 @@ require "spec_helper"
 require 'stringio'
 require 'byebug'
 
-describe Second_option do
+describe Program do
 
   def input_test
-    Second_option.new.find_data
+    Program.new.find_data
   end
 
   describe ".new.find_data(input)" do

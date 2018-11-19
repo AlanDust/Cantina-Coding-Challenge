@@ -1,3 +1,3 @@
-require_relative "./second_option"
+require_relative "./program"
 
-Second_option.new.find_data
+Program.new.find_data

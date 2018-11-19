@@ -1,6 +1,6 @@
 require "pry"
 require "rspec"
-require_relative "../second_option"
+require_relative "../program"
 require 'aruba'
 
 RSpec.configure do |config|
