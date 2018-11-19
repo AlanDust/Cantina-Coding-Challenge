@@ -2,7 +2,7 @@ require 'httparty'
 require 'byebug'
 require 'hashie'
 
-class Second_option
+class Program
 
   def initialize
     @user_choice = ""
